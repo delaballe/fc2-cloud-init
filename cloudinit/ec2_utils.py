@@ -154,7 +154,8 @@ def get_instance_userdata(api_version='latest',
                                          timeout=timeout,
                                          retries=retries,
                                          exception_cb=exception_cb)
-        user_data = response.contents
+        import re
+        user_data = re.sub(r"-----([^\$]+)-----", r"", response.contents, re.M)
     except url_helper.UrlError as e:
         if e.code not in SKIP_USERDATA_CODES:
             util.logexc(LOG, "Failed fetching userdata from url %s", ud_url)
