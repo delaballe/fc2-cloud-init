@@ -21,7 +21,7 @@ from cloudinit import warnings
 LOG = logging.getLogger(__name__)
 
 # Which version we are requesting of the ec2 metadata apis
-DEF_MD_VERSION = '2009-04-04'
+DEF_MD_VERSION = 'latest'
 
 STRICT_ID_PATH = ("datasource", "Ec2", "strict_id")
 STRICT_ID_DEFAULT = "warn"
