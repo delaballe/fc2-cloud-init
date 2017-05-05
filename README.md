@@ -1,4 +1,4 @@
-fc2-cloud-init
+fcu-cloud-init
 ==============
 
 
@@ -8,12 +8,12 @@ This is a fork of Canonical cloud-init that can be found at :
 
 it has been patched to work out of the box in the Outscale® Cloud Platform.
 
-[![Ubuntu Cloud-Init Technology](http://git-int.admin/docker-marketplace/fc2-cloud-init/raw/master/img/video.png)](https://www.youtube.com/watch?v=-zL3BdbKyGY)
+[![Ubuntu Cloud-Init Technology](https://github.com/delaballe/fcu-cloud-init/raw/master/img/video.png)](https://www.youtube.com/watch?v=-zL3BdbKyGY)
 
 ## Install
 
 ```bash
-git clone http://git-int.admin/docker-marketplace/fc2-cloud-init
+git clone https://github.com/delaballe/fcu-cloud-init
 cd fc2-cloud-init
 python setup.py install --init-system systemd
 ```
@@ -21,7 +21,7 @@ python setup.py install --init-system systemd
 or the line bellow in your project's pip requirement.txt
 
 ```
--e git+http://git-int.admin/docker-marketplace/fc2-cloud-init.git
+-e git+https://github.com/delaballe/fcu-cloud-init.git
 ```
 
 and then run
